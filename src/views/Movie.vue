@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import Poster from '../components/Poster'
 import List from '../components/List'
 const axios = require('axios')
 //const TMDB_KEY = 'b7ce98ef3071243e8db32a799eae4c3c';
@@ -29,7 +28,6 @@ export default {
         })
     },
     components:{
-      Poster,
       List
     }
 }
