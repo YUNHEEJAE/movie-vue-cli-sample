@@ -1,10 +1,11 @@
 <template>
-    <ul>
+    <div class='search'>
       <li v-for="result in items" :key="result.id">
         <Poster :propsPath='result.poster_path'/>
       </li> 
-    </ul>
+    </div>
 </template>
+
 
 <script>
 import Poster from '../components/Poster'

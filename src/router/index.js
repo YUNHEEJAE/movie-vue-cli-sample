@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Movie from '../views/Movie.vue'
+import Search from '../views/Search.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -22,6 +23,11 @@ const routes = [
     path: '/movie',
     name: 'Movie',
     component: Movie
+  },
+  {
+    path: '/Search',
+    name: 'Search',
+    component: Search
   }
 ]
 

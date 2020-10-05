@@ -14,12 +14,11 @@ const makeRequest = (path, params) =>
     console.log(error);
   });
 
-
-  
-
-// // 캐시된 이미지를 가져옵니다.
-// export const apiImage = (
-//     path,
-//     defaultPoster = 'https://images.unsplash.com/photo-1571847140471-1d7766e825ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=673&q=80'
-// ) => (path ? `https://image.tmdb.org/t/p/w500${path}` : defaultPoster)
-  
+  export const searchAPI = query =>
+  axios.get(`https://api.themoviedb.org/3/search/company?api_key=${TMDB_KEY}&page=1&query='${query}'`, {
+  }).then(function(response) {
+    console.log(response);
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
